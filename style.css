@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght500;700;900&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primary-white: #FFF;
+    --primary-palaBlue: hsl(225, 100%, 94%);
+    --primary-brightblue: hsl(245deg 100% 50%);
+    --neutral-veryPaleBlue: hsl(245, 75%, 52%);
+    --neutral-desaturatedBlue: hsl(224, 23%, 55%);
+    --neutral-darkBlue: hsl(223, 47%, 23%);
+
+    --FontSize-paragraph: 16px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-palaBlue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#container{
+    width: 50vh;
+    background-color: var(--primary-white);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container .img_illu{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+#container .textCard{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#container .textCard .title{
+    margin-bottom: 10px;
+    color: var(--neutral-darkBlue);
+}
+
+#container .textCard .paragraph{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--neutral-desaturatedBlue);
+}
+
+#container .containerPayment{
+    width: 85%;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: hsl(223deg 52% 98%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+#container .containerPayment .groupe{
+    display: flex;
+    align-items: center;
+}
+
+#container .containerPayment .groupe .iconMusic{
+    margin-right: 15px;
+}
+
+#container .containerPayment .groupe .textPrimary{
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 22px;
+    color: var(--neutral-darkBlue);
+}
+
+#container .containerPayment .groupe .textPrimary .textSecond{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--neutral-desaturatedBlue);
+}
+
+#container .containerPayment .change{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--neutral-veryPaleBlue);
+}
+
+#container .containerPayment .change:hover{
+    color: hsl(245deg 75% 52% / 70%);
+}
+
+#container .buttonPayment{
+    width: 85%;
+    margin-bottom: 30px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--primary-brightblue);
+    box-shadow: -5px 15px 40px -15px hsl(245deg 100% 50%);
+    color: var(--primary-white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#container .buttonPayment:hover{
+    background-color: hsl(245deg 75% 52% / 70%);
+}
+
+#container .cancel{
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--neutral-desaturatedBlue);
+    cursor: pointer;
+}
+
+#container .cancel:hover{
+    color: var(--neutral-darkBlue);
+}
+
+@media screen and (max-width: 900px){
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-size: cover;
+        background-position-y: -400px;
+    }
+}
+
+.attribution{
+    margin-top: 10px;
+    text-align: center;
+    color: var(--neutral-darkBlue);
+  }
+  
+  .attribution a {
+    color: var(--neutral-darkBlue);
+  }
