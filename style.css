@@ -33,6 +33,7 @@ body{
 
 #container{
     width: 50vh;
+    margin: 10px;
     background-color: var(--primary-white);
     border-radius: 10px;
     display: flex;
